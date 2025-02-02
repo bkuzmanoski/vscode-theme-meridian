@@ -1,0 +1,52 @@
+{
+  "name": "vscode-theme-meridian",
+  "version": "0.0.1",
+  "displayName": "Meridian Theme",
+  "description": "A refined light theme with cohesive colors and complete UI coverage.",
+  "publisher": "britown",
+  "author": {
+    "name": "Brian Kuzmanoski"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Meridian",
+        "uiTheme": "vs",
+        "path": "./themes/color-theme.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "meridian-seti",
+        "label": "Meridian",
+        "path": "./themes/file-icon-theme.json"
+      }
+    ]
+  },
+  "homepage": "https://github.com/bkuzmanoski/vscode-theme-meridian/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/bkuzmanoski/vscode-theme-meridian/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bkuzmanoski/vscode-theme-meridian.git"
+  },
+  "keywords": [
+    "clean",
+    "consistent",
+    "minimal",
+    "subtle",
+    "zenwritten"
+  ],
+  "icon": "./assets/icon.png",
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.1"
+  }
+}
