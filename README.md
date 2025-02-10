@@ -111,10 +111,6 @@ All of the theme-related and layout tweaks I use can be found in [suggested-sett
 },
 ```
 
-## Meridian theme for other apps
-
-Check out the matching [Raycast theme](https://themes.ray.so?version=1&name=Meridian&author=Brian%20Kuzmanoski&authorUsername=britown&colors=%23ECEEF0,%23ECEEF0,%232E363C,%232E363C,%233378A3,%23B03645,%239F5A38,%239F8338,%23446F53,%233378A3,%236A519E,%239F5090&appearance=light&addToRaycast) and visit my [dotfiles repo](https://github.com/bkuzmanoski/dotfiles) for ports of this theme for **bat**, **btop**, **eza**, **Ghostty**, **micro**, and **zsh-syntax-highlighting**.
-
 ## Acknowledgments
 
 The syntax highlighting colors were inspired by the "zenwritten_light" Ghostty theme ([mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)) which was in turn taken from [mcchrish/zenbones.nvim](https://github.com/mcchrish/zenbones.nvim).
