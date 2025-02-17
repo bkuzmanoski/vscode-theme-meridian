@@ -4,7 +4,9 @@
   <p>
     <strong>A refined light theme with cohesive colors and complete UI coverage.</strong>
     <br>
-    Check out the ⭐ dark theme ⭐ here: <a href="https://marketplace.visualstudio.com/items?itemName=britown.vscode-theme-zenith">Zenith Theme for VS Code</a>.
+    Comes in 💙 blue-tinted and 🩶 neutral variants.
+    <br>
+    Check out the 🌚 dark theme here: <a href="https://marketplace.visualstudio.com/items?itemName=britown.vscode-theme-zenith">Zenith Theme for VS Code</a>.
   </p>
   <br>
 </div>
