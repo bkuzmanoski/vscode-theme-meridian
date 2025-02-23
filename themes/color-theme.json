@@ -791,7 +791,7 @@
     "terminal.ansiRed": "#b03645",
     "terminal.ansiWhite": "#b4bbc2",
     "terminal.ansiYellow": "#9f5a38",
-    "terminal.border": "#00000000",
+    "terminal.border": "#ccd2d6",
     "terminal.findMatchBackground": "#46725Afe",
     "terminal.findMatchHighlightBackground": "#446f5350",
     "terminal.foreground": "#2e363c",
