@@ -849,7 +849,7 @@
     "titleBar.activeBackground": "#e0e0e0",
     "titleBar.activeForeground": "#353535",
     "titleBar.border": "#d1d1d1",
-    "titleBar.inactiveBackground": "#eeeeee",
+    "titleBar.inactiveBackground": "#e0e0e0",
     "titleBar.inactiveForeground": "#8a8a8a",
     "toolbar.activeBackground": "#8e8e8e48",
     "toolbar.hoverBackground": "#8e8e8e30",
