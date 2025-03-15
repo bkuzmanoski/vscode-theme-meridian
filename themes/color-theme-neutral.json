@@ -680,7 +680,7 @@
     "settings.numberInputBorder": "#d9d9d9",
     "settings.numberInputForeground": "#353535",
     "settings.rowHoverBackground": "#00000000",
-    "settings.sashBorder": "#d9d9d9",
+    "settings.sashBorder": "#fcfcfc",
     "settings.settingsHeaderHoverForeground": "#3378a3",
     "settings.textInputBackground": "#eeeeee",
     "settings.textInputBorder": "#d9d9d9",
