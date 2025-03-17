@@ -413,7 +413,7 @@
     "editorHint.foreground": "#353535",
     "editorHoverWidget.background": "#eeeeee",
     "editorHoverWidget.border": "#c7c7c7",
-    "editorIndentGuide.activeBackground1": "#d9d9d9",
+    "editorIndentGuide.activeBackground1": "#c7c7c7",
     "editorIndentGuide.background1": "#d9d9d9",
     "editorInfo.foreground": "#3378a3",
     "editorInlayHint.foreground": "#6e6e6e",
