@@ -282,7 +282,7 @@
     "breadcrumb.foreground": "#6e6e6e",
     "button.background": "#3378a3",
     "button.border": "#00000000",
-    "button.foreground": "#f7f8f9",
+    "button.foreground": "#fcfcfc",
     "button.hoverBackground": "#3d81ae",
     "button.secondaryBackground": "#666666",
     "button.secondaryForeground": "#e6e6e6",
