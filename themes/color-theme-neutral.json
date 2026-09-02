@@ -269,7 +269,7 @@
     "activityBarBadge.background": "#3378a3",
     "activityBarBadge.foreground": "#eeeeee",
     "activityBarTop.activeBorder": "#3378a3",
-    "activityBarTop.foreground": "#2e353535",
+    "activityBarTop.foreground": "#353535",
     "activityBarTop.inactiveForeground": "#8a8a8a",
     "activityErrorBadge.background": "#b03645",
     "activityErrorBadge.foreground": "#fcfcfc",
