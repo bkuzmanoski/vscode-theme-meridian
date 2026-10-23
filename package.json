@@ -1,6 +1,6 @@
 {
   "name": "vscode-theme-meridian",
-  "version": "0.0.17",
+  "version": "0.1.0",
   "displayName": "Meridian Theme",
   "description": "A refined light theme with cohesive colors and complete UI coverage.",
   "publisher": "britown",
@@ -25,6 +25,16 @@
         "label": "Meridian Neutral",
         "uiTheme": "vs",
         "path": "./themes/color-theme-neutral.json"
+      },
+      {
+        "label": "Meridian (Legacy)",
+        "uiTheme": "vs",
+        "path": "./themes/color-theme-legacy.json"
+      },
+      {
+        "label": "Meridian Neutral (Legacy)",
+        "uiTheme": "vs",
+        "path": "./themes/color-theme-neutral-legacy.json"
       }
     ],
     "iconThemes": [

@@ -13,6 +13,9 @@
 
 ![Meridian Screenshot](assets/screenshot.png)
 
+> [!NOTE]
+> Updated for VS Code [Modern UI](https://code.visualstudio.com/blogs/2026/10/15/modern-ui). The updated themes are backward compatible, but you can switch to "Meridian (Legacy)" or "Meridian Neutral (Legacy)" if you prefer the old style.
+
 ## Installation
 
 1. Install theme from the VS Code Marketplace ([direct link](https://marketplace.visualstudio.com/items?itemName=britown.vscode-theme-meridian))
@@ -22,17 +25,46 @@
 
 ## Suggested settings
 
+**Editor tabs**
+
+VS Code themes cannot customize the hover background for Modern UI's default "connected" editor tabs. They also cannot add a bottom border without it crossing the active tab. Use the settings below as workarounds for your chosen `workbench.experimental.modernUIEditorTabStyle`:
+
+```json
+"workbench.colorCustomizations": {
+  "[Meridian]": {
+    // Connected tabs (default)
+    "modernEditorTab.activeHoverBackground": "#fafcfd",
+    "modernEditorTab.hoverBackground": "#00000000",
+
+    // Pill tabs
+    // "editorGroupHeader.border": "#cdd3d7",
+    // "tab.inactiveForeground": "#505b62",
+    // "tab.unfocusedInactiveForeground": "#505b62"
+  },
+  "[Meridian Neutral]": {
+    // Connected tabs (default)
+    "modernEditorTab.activeHoverBackground": "#fcfcfc",
+    "modernEditorTab.hoverBackground": "#00000000",
+
+    // Pill tabs
+    // "editorGroupHeader.border": "#d2d2d2",
+    // "tab.inactiveForeground": "#595959",
+    // "tab.unfocusedInactiveForeground": "#595959"
+  }
+}
+```
+
 **Font**
 
 The font in the screenshot is [JetBrains Mono](https://www.jetbrains.com/lp/mono/) with these these settings:
 
 ```json
 "editor.fontFamily": "JetBrains Mono",
-"editor.fontLigatures": true, // If you want ligatures
+"editor.fontLigatures": true, // If you want ligatures.
 "editor.fontSize": 13,
 
 "terminal.integrated.fontFamily": "JetBrains Mono",
-"terminal.integrated.fontLigatures": true // If you want ligatures
+"terminal.integrated.fontLigatures": true, // If you want ligatures.
 "terminal.integrated.fontSize": 13,
 "terminal.integrated.lineHeight": 1.1,
 ```
@@ -40,17 +72,19 @@ The font in the screenshot is [JetBrains Mono](https://www.jetbrains.com/lp/mono
 **UI elements**
 
 ```json
-// Tone down the use of colors in Explorer and Editor:
+// Tone down the use of colors in Explorer and Editor.
 "explorer.decorations.colors": false,
 "outline.problems.colors": false,
 "workbench.editor.decorations.colors": false,
-"editor.bracketPairColorization.enabled": false
+"editor.bracketPairColorization.enabled": false,
 
-// Align icons in Explorer, adjust width of resize indicators, extend editor line highlight into gutter
+// Extend Editor line highlight into gutter, adjust Scrollbar and resize indicator (Sash) sizes, and align Explorer file icons.
+"editor.renderLineHighlight": "all",
+"editor.scrollbar.horizontalScrollbarSize": 10,
+"editor.scrollbar.verticalScrollbarSize": 10,
 "workbench.tree.indent": 18,
 "workbench.tree.renderIndentGuides": "none",
 "workbench.sash.size": 2,
-"editor.renderLineHighlight": "all",
 ```
 
 **Extensions**
@@ -68,50 +102,7 @@ Apply these you use the following extensions:
 
 **Other**
 
-All of the theme-related and layout tweaks I use can be found in [suggested-settings.json](https://github.com/bkuzmanoski/vscode-theme-meridian/blob/main/suggested-settings.json) for easy copy-and-pasting.
-
-## Customization
-
-**Add a blue accent to the top active editor tabs**
-
-```json
-"workbench.colorCustomizations": {
-  "[Meridian]": {
-    "tab.activeBorderTop": "#3378a3"
-  }
-},
-```
-
-**Remove the border around matching bracket pairs**
-
-```json
-"workbench.colorCustomizations": {
-  "[Meridian]": {
-    "editorBracketMatch.border": "#00000000",
-    "editorBracketMatch.background": "#83909930" // Highlight their background color instead
-  }
-},
-```
-
-**Highlight quotation marks/backticks surrounding strings in green**
-
-```json
-"editor.tokenColorCustomizations": {
-  "[Meridian]": {
-    "textMateRules": [
-      {
-        "scope": [
-          "punctuation.definition.string",
-          "punctuation.definition.raw"
-        ],
-        "settings": {
-          "foreground": "#446f53"
-        }
-      }
-    ]
-  }
-},
-```
+[suggested-settings.json](https://github.com/bkuzmanoski/vscode-theme-meridian/blob/main/suggested-settings.json) contains these and other theme- and layout-related settings for easy copy-and-pasting.
 
 ## Acknowledgments
 
