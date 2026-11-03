@@ -484,7 +484,7 @@
     "editorSuggestWidget.selectedBackground": "#0000001c",
     "editorUnnecessaryCode.opacity": "#00000080",
     "editorWarning.foreground": "#9f5a38",
-    "editorWhitespace.foreground": "#b9b9b9",
+    "editorWhitespace.foreground": "#6e6e6e",
     "editorWidget.background": "#f5f5f5",
     "editorWidget.border": "#c1c1c1",
     "editorWidget.resizeBorder": "#00000000",
