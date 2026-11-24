@@ -1,27 +1,37 @@
 {
-  // Editor tabs (see README.md)
+  // Tabs (see README.md)
   "workbench.colorCustomizations": {
     "[Meridian]": {
       // Connected tabs (default)
       "modernEditorTab.activeHoverBackground": "#fafcfd",
-      "modernEditorTab.hoverBackground": "#00000000",
+      "modernEditorTab.hoverBackground": "#00000000"
 
       // Pill tabs
       // "editorGroupHeader.border": "#cdd3d7",
       // "tab.inactiveForeground": "#505b62",
-      // "tab.unfocusedInactiveForeground": "#505b62"
+      // "tab.unfocusedInactiveForeground": "#505b62",
+      // "panelTitle.inactiveForeground": "#505b62",
+      // "activityBarTop.inactiveForeground": "#505b62",
+      // "modernTab.hoverBackground": "#102d3d16"
     },
     "[Meridian Neutral]": {
       // Connected tabs (default)
       "modernEditorTab.activeHoverBackground": "#fcfcfc",
-      "modernEditorTab.hoverBackground": "#00000000",
+      "modernEditorTab.hoverBackground": "#00000000"
 
       // Pill tabs
       // "editorGroupHeader.border": "#d2d2d2",
       // "tab.inactiveForeground": "#595959",
-      // "tab.unfocusedInactiveForeground": "#595959"
+      // "tab.unfocusedInactiveForeground": "#595959",
+      // "panelTitle.inactiveForeground": "#595959",
+      // "activityBarTop.inactiveForeground": "#595959",
+      // "modernTab.hoverBackground": "#00000013"
     }
   },
+
+  // Secondary side bar tabs (see README.md)
+  // "workbench.activityBar.location": "top",
+  // "workbench.panel.showLabels": false,
 
   // Font
   "editor.fontFamily": "JetBrains Mono",

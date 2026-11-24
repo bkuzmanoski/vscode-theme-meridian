@@ -25,38 +25,60 @@
 
 ## Suggested settings
 
-**Editor tabs**
+**Tabs**
 
-VS Code themes cannot customize the hover background for Modern UI's default "connected" editor tabs. They also cannot add a bottom border without it crossing the active tab. Use the settings below as workarounds for your chosen `workbench.experimental.modernUIEditorTabStyle`:
+VS Code supports **connected** (default) and **pill** tabs via `workbench.experimental.modernUIEditorTabStyle`. Add the color overrides for your tab style:
+
+- **Connected tabs (default):** VS Code ignores a theme's hover colors for connected editor tabs, so they need to be set in your settings.
+
+  ```json
+  "workbench.colorCustomizations": {
+    "[Meridian]": {
+      "modernEditorTab.activeHoverBackground": "#fafcfd",
+      "modernEditorTab.hoverBackground": "#00000000"
+    },
+    "[Meridian Neutral]": {
+      "modernEditorTab.activeHoverBackground": "#fcfcfc",
+      "modernEditorTab.hoverBackground": "#00000000"
+    }
+  }
+  ```
+
+- **Pill tabs:** Adjusts tab colors and adds a bottom border (omitted from the theme so it doesn't cross the active connected tab).
+
+  ```json
+  "workbench.colorCustomizations": {
+    "[Meridian]": {
+      "editorGroupHeader.border": "#cdd3d7",
+      "tab.inactiveForeground": "#505b62",
+      "tab.unfocusedInactiveForeground": "#505b62",
+      "panelTitle.inactiveForeground": "#505b62",
+      "activityBarTop.inactiveForeground": "#505b62",
+      "modernTab.hoverBackground": "#102d3d16"
+    },
+    "[Meridian Neutral]": {
+      "editorGroupHeader.border": "#d2d2d2",
+      "tab.inactiveForeground": "#595959",
+      "tab.unfocusedInactiveForeground": "#595959",
+      "panelTitle.inactiveForeground": "#595959",
+      "activityBarTop.inactiveForeground": "#595959",
+      "modernTab.hoverBackground": "#00000013"
+    }
+  }
+  ```
+
+**Secondary side bar tabs (optional)**
+
+With text labels, the active tab in the secondary side bar sits 1px lower than the divider below it (a VS Code bug; other tab bars are fine). To avoid it, show icons instead of labels:
 
 ```json
-"workbench.colorCustomizations": {
-  "[Meridian]": {
-    // Connected tabs (default)
-    "modernEditorTab.activeHoverBackground": "#fafcfd",
-    "modernEditorTab.hoverBackground": "#00000000",
-
-    // Pill tabs
-    // "editorGroupHeader.border": "#cdd3d7",
-    // "tab.inactiveForeground": "#505b62",
-    // "tab.unfocusedInactiveForeground": "#505b62"
-  },
-  "[Meridian Neutral]": {
-    // Connected tabs (default)
-    "modernEditorTab.activeHoverBackground": "#fcfcfc",
-    "modernEditorTab.hoverBackground": "#00000000",
-
-    // Pill tabs
-    // "editorGroupHeader.border": "#d2d2d2",
-    // "tab.inactiveForeground": "#595959",
-    // "tab.unfocusedInactiveForeground": "#595959"
-  }
-}
+"workbench.activityBar.location": "top",
+"workbench.panel.showLabels": false,
 ```
 
 **Font**
 
-The font in the screenshot is [JetBrains Mono](https://www.jetbrains.com/lp/mono/) with these these settings:
+The font in the screenshot is [JetBrains Mono](https://www.jetbrains.com/lp/mono/) with these settings:
 
 ```json
 "editor.fontFamily": "JetBrains Mono",
@@ -89,11 +111,11 @@ The font in the screenshot is [JetBrains Mono](https://www.jetbrains.com/lp/mono
 
 **Extensions**
 
-Apply these you use the following extensions:
+Apply these if you use the following extensions:
 
 ```json
 "errorLens.borderRadius": "4px",
-"errorLens.margin": "2ch",
+"errorLens.margin": "6ch",
 "errorLens.messageBackgroundMode": "message",
 "errorLens.padding": "1px 4px",
 
