@@ -865,7 +865,7 @@
     "terminalCommandDecoration.successBackground": "#446f53",
     "terminalCommandGuide.foreground": "#cdd3d7",
     "terminalCursor.foreground": "#2e363c",
-    "terminalOverviewRuler.cursorForeground": "#11283513",
+    "terminalOverviewRuler.cursorForeground": "#102d3d69",
     "terminalStickyScrollHover.background": "#102d3d11",
     "testing.coverCountBadgeBackground": "#d1d8dd",
     "testing.coverCountBadgeForeground": "#2e363c",
